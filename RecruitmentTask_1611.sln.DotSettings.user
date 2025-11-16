@@ -1,0 +1,28 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AAssertionExtensions_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E3_003Fresharper_002Dhost_003FSourcesCache_003Fcae38e6877550b3677e8f26789980e813503062cafb255ab8b95be2ba6be2_003FAssertionExtensions_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AStringAssertions_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2025_002E3_003Fresharper_002Dhost_003FSourcesCache_003F319d40a4c0fd4669c3c2c89730e21a54976e79617ec32df9aab0d8f1f4d370ab_003FStringAssertions_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1206edab_002Dbb13_002D4c25_002D9298_002De0a384e66289/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldPutCreateBookAndRequestAndResponseBeEqual #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFolder&gt;EFB3187A-0DA3-4DA8-A108-7EFD872A0F35/d:Tests&lt;/ProjectFolder&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3f704883_002D2626_002D44bb_002D8377_002Dfa21250f26f3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldPutCreateBookAndRequestAndResponseBeEqual #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::EFB3187A-0DA3-4DA8-A108-7EFD872A0F35::net8.0::RecruitmentTask_1611.PutBooksTests.ShouldPutCreateBookAndRequestAndResponseBeEqual&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4bcbe4e2_002Daa4b_002D4109_002D954d_002Dceee60f29108/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldPutCreateBookAndRequestAndResponseBeEqual" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::EFB3187A-0DA3-4DA8-A108-7EFD872A0F35::net8.0::RecruitmentTask_1611.PutBooksTests.ShouldPutCreateBookAndRequestAndResponseBeEqual&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9ca88f32_002Da832_002D48a4_002Db858_002D4e8c3e90734b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldPutCreateBookAndRequestAndResponseBeEqual #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::EFB3187A-0DA3-4DA8-A108-7EFD872A0F35::net8.0::RecruitmentTask_1611.PutBooksTests.ShouldPutCreateBookAndRequestAndResponseBeEqual&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ea8444ea_002D035c_002D4c6b_002D94a5_002D97740d849346/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ShouldPutCreateBookAndRequestAndResponseBeEqual #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::EFB3187A-0DA3-4DA8-A108-7EFD872A0F35::net8.0::RecruitmentTask_1611.PutBooksTests.ShouldPutCreateBookAndRequestAndResponseBeEqual&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	</wpf:ResourceDictionary>
