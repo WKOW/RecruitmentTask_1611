@@ -14,7 +14,7 @@ using FluentAssertions;
 
 public class PutBooksTests
 {
-    private readonly ApiClient _client = new(); 
+    private readonly ApiClient _client = new();
     Faker _faker = new Faker();
 
     [Fact]
@@ -25,14 +25,14 @@ public class PutBooksTests
         var requestBody = new Book
         {
             Id = id,
-            Title = _faker.Lorem.Sentence(), 
+            Title = _faker.Lorem.Sentence(),
             Description = _faker.Lorem.Paragraph(),
-            PageCount = new Random().Next(50, 1000), 
+            PageCount = new Random().Next(50, 1000),
             Excerpt = _faker.Lorem.Sentence(),
             PublishDate = DateTime.Now.ToString("o")
         };
         //When 
-        var response = await _client.PutAsync($"{BooksEndpoint}/{id}",requestBody);
+        var response = await _client.PutAsync($"{BooksEndpoint}/{id}", requestBody);
         // Then
         Assert.True(response.IsSuccessful,
             $"Request failed with status {response.StatusCode}\n"
@@ -53,23 +53,22 @@ public class PutBooksTests
         var requestBody = new Book
         {
             Id = id,
-            Title = _faker.Lorem.Sentence(), 
+            Title = _faker.Lorem.Sentence(),
             Description = _faker.Lorem.Paragraph(),
-            PageCount = new Random().Next(50, 1000), 
+            PageCount = new Random().Next(50, 1000),
             Excerpt = _faker.Lorem.Sentence(),
             PublishDate = DateTime.Now.ToString("o")
         };
 
         //When 
-        var response = await _client.PutAsync($"{BooksEndpoint}/{id}",requestBody);
-        
+        var response = await _client.PutAsync($"{BooksEndpoint}/{id}", requestBody);
+
         //Then
         var responseJson = JObject.Parse(response.Content);
         try
         {
             using (new AssertionScope("Book_validation"))
             {
-                
                 requestBody.Id.Should().Be((int)responseJson["id"]);
                 requestBody.Title.Should().Be(responseJson["title"].ToString());
                 requestBody.Description.Should().Be(responseJson["description"].ToString());

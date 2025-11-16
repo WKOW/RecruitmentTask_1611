@@ -1,4 +1,5 @@
 ﻿namespace RecruitmentTask_1611;
+
 using FluentAssertions.Execution;
 using Newtonsoft.Json.Linq;
 using Xunit;

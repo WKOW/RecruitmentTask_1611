@@ -3,36 +3,34 @@
 using FluentAssertions.Execution;
 using Newtonsoft.Json.Linq;
 using Xunit;
-using Newtonsoft.Json;
 using System.Threading.Tasks;
 using Helpers;
-using static Helpers.BaseHelpers;
-using Models;
+using static ApiEndpoints.Paths;
 using static ApiEndpoints;
 using Bogus;
 using FluentAssertions;
 
 public class GetBooksTests
 {
-    private readonly ApiClient _client = new(); 
+    private readonly ApiClient _client = new();
     Faker _faker = new Faker();
 
-    [InlineData(1,100)]
-    [InlineData(2,200)]
-    [InlineData(3,300)]
-    [InlineData(4,400)]
-    [InlineData(5,500)]
-    [InlineData(6,600)]
-    [InlineData(7,700)]
-    [InlineData(8,800)]
-    [InlineData(9,900)]
-    [InlineData(10,1000)]
+    [InlineData(1, 100)]
+    [InlineData(2, 200)]
+    [InlineData(3, 300)]
+    [InlineData(4, 400)]
+    [InlineData(5, 500)]
+    [InlineData(6, 600)]
+    [InlineData(7, 700)]
+    [InlineData(8, 800)]
+    [InlineData(9, 900)]
+    [InlineData(10, 1000)]
     [Theory]
     public async Task ShouldGetBookIdAndPageCountCheck(int id, int pageCount)
     {
         //When 
-        var response = await _client.GetAsync($"{BooksEndpoint}/{id}");
-        
+        var response = await _client.GetAsync(GetResourceById(BooksEndpoint, id));
+
         //Then
         var responseJson = JObject.Parse(response.Content);
         try

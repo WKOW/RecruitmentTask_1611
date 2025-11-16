@@ -1,4 +1,5 @@
 ﻿namespace RecruitmentTask_1611.Helpers;
+
 using RestSharp;
 using System.Threading.Tasks;
 

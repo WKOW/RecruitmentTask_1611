@@ -2,7 +2,7 @@
 
 public class Activity
 {
-        public int ID { get; set; }
-        public string Title { get; set; }
-        public string DueDate { get; set; }
+    public int ID { get; set; }
+    public string Title { get; set; }
+    public string DueDate { get; set; }
 }

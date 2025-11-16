@@ -16,7 +16,7 @@ public static class ApiEndpoints
         {
             return $"{BasePath}/{resource}";
         }
-        
+
         public static string GetResourceById(string resource, int id)
         {
             return $"{BasePath}/{resource}/{id}";

@@ -65,7 +65,7 @@ public class GetActivitiesTests
                                                                  actualResponseContent: response.Content));
         var activities = JsonConvert.DeserializeObject<List<Activity>>(response.Content);
         // And
-        Assert.False(CompareDays.ActivitiesDueYesterdayOrEarlier(activities),
+        Assert.False(BaseHelpers.ActivitiesDueYesterdayOrEarlier(activities),
             $"There are some activities due yesterday or due earlier date." +
             RequestFailureHelper.GetFailuredRequestDetails(
                 baseUrl: ApiClient.BaseUrl,
