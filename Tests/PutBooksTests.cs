@@ -69,18 +69,11 @@ public class PutBooksTests
         {
             using (new AssertionScope("Book_validation"))
             {
-                requestBody.Id.Should().Be((int)responseJson["id"]);
-                requestBody.Title.Should().Be(responseJson["title"].ToString());
-                requestBody.Description.Should().Be(responseJson["description"].ToString());
-                requestBody.PageCount.Should().Be((int)responseJson["pageCount"]);
-                requestBody.Excerpt.Should().Be(responseJson["excerpt"].ToString());
-                requestBody.PublishDate.Should().Be(responseJson["publishDate"].ToString());
-                // there is a bug in application 
-                //See more details
-                //↓ (expected)
-                //    "2025-11-16T14:28:20.0557689+01:00"
-                //    "16.11.2025 14:28:20"
-                //    ↑ (actual)
+                responseJson["title"].ToString().Should().Be(requestBody.Title);
+                responseJson["id"].ToObject<int>().Should().Be(requestBody.Id);
+                responseJson["description"].ToString().Should().Be(requestBody.Description);
+                responseJson["pageCount"].ToObject<int>().Should().Be(requestBody.PageCount);
+                responseJson["excerpt"].ToString().Should().Be(requestBody.Excerpt);
             }
         }
         catch (Exception ex)

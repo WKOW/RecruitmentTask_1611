@@ -11,16 +11,6 @@ public static class ApiEndpoints
         public const string Orders = "Orders";
         public const string Authors = "Authors";
         public const string Books = "Books";
-
-        public static string GetEndpoint(string resource)
-        {
-            return $"{BasePath}/{resource}";
-        }
-
-        public static string GetResourceById(string resource, int id)
-        {
-            return $"{BasePath}/{resource}/{id}";
-        }
     }
 
     public static string ActivitiesEndpoint => GetFullPath(Paths.Activities);

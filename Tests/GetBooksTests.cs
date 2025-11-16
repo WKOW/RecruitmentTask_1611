@@ -5,15 +5,12 @@ using Newtonsoft.Json.Linq;
 using Xunit;
 using System.Threading.Tasks;
 using Helpers;
-using static ApiEndpoints.Paths;
 using static ApiEndpoints;
-using Bogus;
 using FluentAssertions;
 
 public class GetBooksTests
 {
     private readonly ApiClient _client = new();
-    Faker _faker = new Faker();
 
     [InlineData(1, 100)]
     [InlineData(2, 200)]
@@ -29,7 +26,7 @@ public class GetBooksTests
     public async Task ShouldGetBookIdAndPageCountCheck(int id, int pageCount)
     {
         //When 
-        var response = await _client.GetAsync(GetResourceById(BooksEndpoint, id));
+        var response = await _client.GetAsync($"{BooksEndpoint}/{id}");
 
         //Then
         var responseJson = JObject.Parse(response.Content);
