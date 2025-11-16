@@ -65,6 +65,7 @@ public class PutBooksTests
 
         //Then
         var responseJson = JObject.Parse(response.Content);
+        
         try
         {
             using (new AssertionScope("Book_validation"))
@@ -74,6 +75,9 @@ public class PutBooksTests
                 responseJson["description"].ToString().Should().Be(requestBody.Description);
                 responseJson["pageCount"].ToObject<int>().Should().Be(requestBody.PageCount);
                 responseJson["excerpt"].ToString().Should().Be(requestBody.Excerpt);
+                var publishDateResponse = DateTimeOffset.Parse(responseJson["publishDate"].ToString()).ToString("yyyy-MM-ddTHH:mm");
+                var publishDateRequest =  DateTimeOffset.Parse(requestBody.PublishDate).ToString("yyyy-MM-ddTHH:mm");
+                publishDateResponse.Should().Be(publishDateRequest);
             }
         }
         catch (Exception ex)
